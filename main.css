@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+body {
+font-family: 'Open Sans', sans-serif;
+background-color: #333;
+color: rgba(255, 255, 255, .7);
+}
+.card {
+position: relative;
+left: 50%;
+top: 250px;
+width: 170px;
+height: 170px;
+background: url('pict.jpg') no-repeat center/cover;
+border-radius: 10px;
+box-shadow: 0 10px 25px 0 rgb(253, 252, 252);
+transform: translateX(-50%);
+transition: 0.5s;
+}
+.card:hover {
+transition: 0.5s;
+}
+.card:hover .title {
+padding-bottom: 50px;
+opacity: 1;
+transition: 0.5s;
+}
+.card .title {
+position: absolute;
+width: 100%;
+bottom: 0;
+left: 0;
+font-size: 26px;
+font-weight: 300;
+padding: 30px 0;
+background: linear-gradient(to top, #000, transparent);
+text-transform: uppercase;
+text-align: center;
+opacity: 0;
+transition: 0.5s;
+}
